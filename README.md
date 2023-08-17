@@ -1,1 +1,11 @@
-# Trading_Tracker_
+﻿using System;
+namespace BulkyBookWeb
+{
+	public class README
+	{
+		public README()
+		{
+		}
+	}
+}
+

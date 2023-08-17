@@ -1,0 +1,127 @@
+@model Category
+
+<form method="post" asp-action="Edit">
+    <div class="boarder p-3 mt-4">
+        <div class="row pb-2">
+            <h2 class="text-primary">Create Category</h2>
+            <hr />
+        </div>
+        @*  <div asp-validation-summary="All"></div>*@
+        <div class="mb-3">
+            <label asp-for="Name"></label>
+            <input asp-for="Name" class="form-control" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Sector"></label>
+            <input asp-for="Sector" class="form-control" />
+            <span asp-validation-for="Sector" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Index"></label>
+            <input asp-for="Index" class="form-control" />
+            <span asp-validation-for="Name" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Float"></label>
+            <input asp-for="Float" class="form-control" />
+            <span asp-validation-for="Float" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="DailyVolume"></label>
+            <input asp-for="DailyVolume" class="form-control" />
+            <span asp-validation-for="DailyVolume" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="PrevClose"></label>
+            <input asp-for="PrevClose" class="form-control" />
+            <span asp-validation-for="PrevClose" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Open"></label>
+            <input asp-for="Open" class="form-control" />
+            <span asp-validation-for="Open" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="HighOfDay"></label>
+            <input asp-for="HighOfDay" class="form-control" />
+            <span asp-validation-for="HighOfDay" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="LowOfDay"></label>
+            <input asp-for="LowOfDay" class="form-control" />
+            <span asp-validation-for="LowOfDay" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Close"></label>
+            <input asp-for="Close" class="form-control" />
+            <span asp-validation-for="Close" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="FromOpen10High"></label>
+            <input asp-for="FromOpen10High" class="form-control" />
+            <span asp-validation-for="FromOpen10High" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="FromOpen30High"></label>
+            <input asp-for="FromOpen30High" class="form-control" />
+            <span asp-validation-for="FromOpen30High" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="MorningLow"></label>
+            <input asp-for="MorningLow" class="form-control" />
+            <span asp-validation-for="MorningLow" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="First2HrsHigh"></label>
+            <input asp-for="First2HrsHigh" class="form-control" />
+            <span asp-validation-for="First2HrsHigh" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="MarketCap"></label>
+            <input asp-for="MarketCap" class="form-control" />
+            <span asp-validation-for="MarketCap" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="DisplayOrder"></label>
+            <input asp-for="DisplayOrder" class="form-control" />
+            <span asp-validation-for="DisplayOrder" class="text-danger"></span>
+        </div>
+
+        <div class="mb-3">
+            <label asp-for="Day2Open"></label>
+            <input asp-for="Day2Open" class="form-control" />
+            <span asp-validation-for="Day2Open" class="text-danger"></span>
+        </div>
+
+
+
+        <div class="mb-3">
+            <label asp-for="Day2Close"></label>
+            <input asp-for="Day2Close" class="form-control" />
+            <span asp-validation-for="Day2Close" class="text-danger"></span>
+        </div>
+
+   
+    </div>
+            <button type="submit" class="btn btn-primary" style="width:150px">Confirm Edit</button>
+            <a asp-controller="Category" asp-action="Index" class="btn btn-secondary" style="width:150px">Back to List</a>
+    </div>
+</form>
+
+@section Scripts{
+<partial name="_ValidationScriptsPartial" />}
